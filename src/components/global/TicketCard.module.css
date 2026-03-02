@@ -1,0 +1,135 @@
+.card {
+  background: linear-gradient(180deg, #1f283d, #162033);
+  border: 1px solid color-mix(in srgb, #22d3ee, transparent 80%);
+  border-radius: 18px;
+  text-align: center;
+  color: #f5f5f5;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 40px color-mix(in srgb, #000, transparent 70%);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 60px color-mix(in srgb, #22d3ee, transparent 80%);
+}
+
+.active:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 0 20px 60px color-mix(in srgb, #22d3ee, transparent 80%);
+}
+
+/* 🔥 Featured / Active card */
+.active {
+  transform: scale(1.05);
+  border-color: #22d3ee;
+  box-shadow: 0 10px 30px color-mix(in srgb, #22d3ee, transparent 90%);
+}
+.active .card_top {
+  background: linear-gradient(
+    145deg,
+    #22d3ee,
+    color-mix(in srgb, #22d3ee, transparent 20%)
+  );
+}
+.active .icon {
+  background: #0f172a !important;
+}
+.active .icon i {
+  color: #22d3ee !important;
+}
+.active .card_top h1,
+.active .card_top h3,
+.active .card_top p,
+.active .card_top span {
+  color: #0f172a !important;
+}
+span {
+  font-family: "Roboto", sans-serif;
+  padding-right: 5px;
+}
+/* Icon circle */
+.icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  margin: 0 auto 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  color: #0f172a;
+}
+
+/* Features */
+.features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px;
+  text-align: left;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  padding: 6px 0;
+  border-bottom: 1px solid color-mix(in srgb, #f5f5f5, transparent 95%);
+}
+
+.features li:last-child {
+  border: none;
+}
+
+/* available */
+.available {
+  color: #f5f5f5;
+}
+
+.available i {
+  color: #22d3ee;
+  font-size: 14px;
+}
+
+/*  unavailable */
+.unavailable {
+  color: color-mix(in srgb, #f5f5f5, transparent 55%);
+}
+
+.unavailable i {
+  color: color-mix(in srgb, #f5f5f5, transparent 60%);
+  font-size: 14px;
+}
+
+/* Button */
+.button {
+  width: 100%;
+  border: none;
+  border-radius: 12px;
+  padding: 14px 0;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px color-mix(in srgb, #22d3ee, transparent 70%);
+}
+
+.card_top {
+  background: linear-gradient(
+    145deg,
+    #1f283d 0%,
+    color-mix(in srgb, #22d3ee, transparent 97%) 100%
+  );
+  padding: 30px 25px 25px;
+}
+
+.card_bottom {
+  padding: 25px;
+}

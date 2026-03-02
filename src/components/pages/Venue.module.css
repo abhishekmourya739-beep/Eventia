@@ -1,0 +1,74 @@
+.venue_left h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  color: #fafafa;
+}
+.venue_left > p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: color-mix(in srgb, #f5f5f5, transparent 20%);
+  margin-bottom: 32px;
+}
+.features p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.features p i {
+  font-size: 20px;
+  color: #22d3ee;
+}
+.features {
+  margin-bottom: 40px;
+}
+.btn1 {
+  box-shadow: 0 4px 15px color-mix(in srgb, #22d3ee, transparent 60%);
+}
+.btn1:hover {
+  background: color-mix(in srgb, #22d3ee, black 15%);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px color-mix(in srgb, #22d3ee, transparent 50%);
+}
+.btn2:hover {
+  border-color: #22d3ee !important;
+  color: #22d3ee !important;
+  transform: translateY(-4px);
+}
+.venue_right_card {
+  background: #28334b;
+  border-radius: 16px;
+  padding: 24px;
+
+  border: 1px solid color-mix(in srgb, #f5f5f5, transparent 90%);
+  box-shadow: 0 10px 30px color-mix(in srgb, #f5f5f5, transparent 95%);
+}
+.venue_right_card h5 {
+  font-size: 32px !important;
+}
+.venue_right_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px color-mix(in srgb, #f5f5f5, transparent 90%);
+}
+
+.badges {
+  padding-top: 24px;
+  border-top: 1px solid color-mix(in srgb, #f5f5f5, transparent 90%);
+}
+.badges p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: color-mix(in srgb, #f5f5f5, transparent 30%);
+  font-weight: 500;
+}
+.badges p i {
+  color: #22d3ee;
+  font-size: 16px;
+}

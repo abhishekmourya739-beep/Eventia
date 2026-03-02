@@ -1,0 +1,19 @@
+.iconbox {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    #22d3ee 0%,
+    color-mix(in srgb, #22d3ee, #000000 20%) 100%
+  );
+  border-radius: 12px;
+  font-size: 22px;
+  margin-right: 20px;
+}
+.iconbox path {
+  color: #0f172a;
+}

@@ -1,0 +1,104 @@
+.hero_Section {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 40px;
+  overflow: hidden;
+  color: #ffffff;
+  margin-top: -150px;
+}
+
+.video_background {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.video_background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video_background .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 4, 13, 0.9) 0%,
+    rgba(0, 4, 13, 0.6) 50%,
+    rgba(0, 4, 13, 0.8) 100%
+  );
+}
+
+/* .hero_Section {
+  padding-top: 80px;
+  padding-bottom: 40px;
+  z-index: 2;
+  position: relative;
+} */
+.hero_Section .container {
+  position: relative;
+  z-index: 5;
+}
+
+.info_badge {
+  background: color-mix(in srgb, #0f172a, transparent 30%);
+  padding: 16px 24px;
+  border-radius: 12px;
+  border: 1px solid color-mix(in srgb, #ffffff, transparent 90%);
+  backdrop-filter: blur(8px);
+}
+.btns {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.hero_right {
+  border: 1px solid color-mix(in srgb, #ffffff, transparent 85%);
+  border-radius: 20px;
+  padding: 40px 32px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 20px 50px color-mix(in srgb, #ffffff, transparent 90%);
+  text-align: center;
+}
+.seats {
+  background: color-mix(in srgb, #ffffff, transparent 95%);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+.images_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img {
+  transition: all 0.4s ease;
+}
+.img img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #ffffff;
+  margin-left: -12px;
+}
+
+.img:last-child {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #0f172a;
+  margin-left: -12px;
+  font-size: 13px;
+  background-color: #22d3ee;
+  color: #ffffff;
+}
+.img:hover {
+  transform: scale(1.15);
+  z-index: 5;
+}

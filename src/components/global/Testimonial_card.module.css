@@ -1,0 +1,114 @@
+.card {
+  background: #1f283d;
+  border-radius: 24px;
+  padding: 40px;
+  position: relative;
+  box-shadow: 0 8px 32px color-mix(in srgb, #f5f5f5, transparent 92%);
+  border: 1px solid color-mix(in srgb, #f5f5f5, transparent 94%);
+  height: 100%;
+}
+.stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 1.5rem;
+}
+.stars i {
+  color: #ffc107;
+  font-size: 16px;
+}
+.card > p {
+  font-style: italic;
+  position: relative;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+.card > p::before {
+  content: '"';
+  position: absolute;
+  top: -1rem;
+  left: -0.5rem;
+  font-size: 4rem;
+  color: color-mix(in srgb, #22d3ee, transparent 80%);
+  font-family: Georgia, serif;
+  line-height: 1;
+}
+.card_profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid color-mix(in srgb, #f5f5f5, transparent 92%);
+}
+.card_profile_img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #22d3ee;
+  box-shadow: 0 4px 16px color-mix(in srgb, #22d3ee, transparent 80%);
+}
+.card_profile_content h1 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 0.25rem 0;
+  color: #fafafa;
+}
+.card_profile_content span {
+  font-size: 0.9rem;
+  color: #22d3ee;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+.card_profile_content p {
+  font-size: 0.85rem;
+  color: color-mix(in srgb, #f5f5f5, transparent 40%);
+  font-weight: 500;
+  margin: 0;
+}
+.top_review {
+  position: absolute;
+  top: -12px;
+  right: 2rem;
+  background: linear-gradient(
+    135deg,
+    #22d3ee 0%,
+    color-mix(in srgb, #22d3ee, #007bff 20%) 100%
+  );
+  color: #0f172a;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 4px 16px color-mix(in srgb, #22d3ee, transparent 70%);
+}
+.top_review span {
+  color: #0f172a;
+  font-size: 13px;
+  font-weight: 600;
+}
+.top_review i {
+  font-size: 14px;
+  color: #0f172a;
+}
+.active {
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, #22d3ee, transparent 94%) 0%,
+    #1f283d 100%
+  );
+  border: 2px solid color-mix(in srgb, #22d3ee, transparent 80%);
+  transform: scale(1.05);
+}
+.card:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 60px color-mix(in srgb, #f5f5f5, transparent 85%);
+}
+.active:hover {
+  transform: scale(1.05) translateY(-12px);
+  box-shadow: 0 20px 60px color-mix(in srgb, #f5f5f5, transparent 85%);
+}

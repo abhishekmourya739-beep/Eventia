@@ -1,0 +1,32 @@
+.schedule_box_container {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.schedule_card_container {
+  margin-bottom: 60px;
+}
+.schedule_btn_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+.schedule_btn1:hover {
+  background: color-mix(in srgb, #22d3ee, black 10%) !important;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px color-mix(in srgb, #22d3ee, transparent 70%);
+}
+.schedule_btn2:hover {
+  background: #22d3ee !important;
+  color: #0f172a !important;
+  transform: translateY(-4px);
+}
+.schedule_btn2:hover i {
+  color: #0f172a !important;
+}

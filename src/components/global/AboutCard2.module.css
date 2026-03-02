@@ -1,0 +1,14 @@
+.iconbox {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, #0f172a, transparent 85%);
+  border-radius: 12px;
+  font-size: 1.5rem;
+}
+
+.iconbox path {
+  color: #0f172a;
+}

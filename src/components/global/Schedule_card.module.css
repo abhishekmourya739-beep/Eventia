@@ -1,0 +1,58 @@
+.schedule_card {
+  display: flex;
+  margin-bottom: 32px;
+  gap: 12px;
+  width: 100%;
+}
+.schedule_left {
+  position: relative;
+  padding-right: 20px;
+}
+.schedule_left::after {
+  content: "";
+  position: absolute;
+  right: -11px;
+  top: 8px;
+  width: 20px;
+  height: 20px;
+  background: #22d3ee;
+  border-radius: 50%;
+  border: 3px solid #1f283d;
+  box-shadow: 0 2px 8px color-mix(in srgb, #f5f5f5, transparent 85%);
+}
+.schedule_right {
+  background: #1f283d;
+  border-radius: 16px;
+  padding: 28px;
+  margin-left: 20px;
+  box-shadow: 0 4px 20px color-mix(in srgb, #f5f5f5, transparent 92%);
+  border: 1px solid color-mix(in srgb, #f5f5f5, transparent 90%);
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+.schedule_content {
+  flex: 1;
+}
+.schedule_content_top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+.schedule_profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.schedule_img img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.schedule_right:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px color-mix(in srgb, #f5f5f5, transparent 85%);
+}
